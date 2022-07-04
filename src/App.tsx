@@ -5,7 +5,7 @@ import AppHeader from "./components/AppHeader";
 import Showcase from "./components/Showcase";
 
 //pages
-
+import Checkout from "./pages/Checkout";
 import Home from "./pages/Home";
 
 function App() {
@@ -13,6 +13,9 @@ function App() {
     <Router>
       <AppHeader title="nu3" />
       <Switch>
+        <Route path="/checkout">
+          <Checkout />
+        </Route>
         <Route path="/" exact>
           <Showcase>
             <Home />
