@@ -1,0 +1,53 @@
+{
+    "totalItems": 37,
+    "items": [
+        {
+            "price": 13.99,
+            "image": "https://cdn.shopify.com/s/files/1/0095/2274/1329/products/4_252F5_252F3_252F4_252F453437c2922e342acc8db2a47e2a24ee197fe940_20174_9807111a-5f4b-4430-a21b-3809799931aa_large.jpg?v=1623047667",
+            "vendor": "BEAVITA",
+            "title": "BEAVITA Vitalkost Diät-Shake",
+            "id": "4365140131921",
+            "link": "/products/beavita-vitalkost-diaet-shake"
+        },
+        {
+            "price": 50.99,
+            "image": "https://cdn.shopify.com/s/files/1/0095/2274/1329/products/8_252F1_252Fc_252Fc_252F81ccf47420c1f3a11717ff5ad7f93e3e13214556_21446_large.jpg?v=1620826303",
+            "vendor": "nu3",
+            "title": "nu3 Premium Skin & Hair Beauty",
+            "id": "4725777367121",
+            "link": "/products/nu3-premium-skin-and-hair-beauty"
+        },
+        {
+            "price": 29.99,
+            "image": "https://cdn.shopify.com/s/files/1/0095/2274/1329/products/b_252Fe_252F1_252F6_252Fbe165bf2bda50fef7fbc29b4654b89b7fed186cb_20857_Top_large.jpg?v=1638908183",
+            "vendor": "nu3",
+            "title": "nu3 Premium Hair Beauty Kapseln",
+            "id": "4706027208785",
+            "link": "/products/nu3-premium-hair-beauty-kapseln"
+        },
+        {
+            "price": 24.99,
+            "image": "https://cdn.shopify.com/s/files/1/0095/2274/1329/products/0_252F4_252Fd_252F2_252F04d2be7110bc54bc0149c87834fff6f4025b1f42_20855_large.jpg?v=1639588462",
+            "vendor": "nu3",
+            "title": "nu3 Premium Skin Beauty Hautvitamine",
+            "id": "4715703173201",
+            "link": "/products/nu3-premium-skin-beauty-hautvitamine"
+        },
+        {
+            "price": 59.99,
+            "image": "https://cdn.shopify.com/s/files/1/0095/2274/1329/products/7_252Ff_252F4_252Fc_252F7f4c6a5d42a2930dc5d1cc85c7bb2130467dcda9_20472_f71797ad-41af-4859-821b-c3a9b7f81a68_large.jpg?v=1639410411",
+            "vendor": "nu3",
+            "title": "nu3 Premium Kollagen Trinkampullen",
+            "id": "4365857718353",
+            "link": "/products/nu3-premium-kollagen-trinkampullen"
+        },
+        {
+            "price": 14.99,
+            "image": "https://cdn.shopify.com/s/files/1/0095/2274/1329/products/f_252F9_252F6_252Fb_252Ff96ba2fbd3e267f18564614c494db282045b26b1_19809_8d27876a-995a-4bf9-b325-3e73470970eb_large.jpg?v=1620827740",
+            "vendor": "nu3",
+            "title": "nu3 Kollagenhydrolysat",
+            "id": "4365851033681",
+            "link": "/products/nu3-kollagenhydrolysat"
+        }
+    ]
+}

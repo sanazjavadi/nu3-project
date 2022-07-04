@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Showcase: Snapshot test with children 1`] = `
+<div
+  className="App-Showcase"
+>
+  <p>
+    foo!
+  </p>
+</div>
+`;
+
+exports[`Showcase: Snapshot test without children 1`] = `
+<div
+  className="App-Showcase"
+>
+  <p>
+    Nothing to show here...
+  </p>
+</div>
+`;
