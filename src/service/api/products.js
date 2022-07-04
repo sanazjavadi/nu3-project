@@ -14,3 +14,12 @@ export const getProductsService = (query) => {
     })
     .catch((error) => error.response || error);
 };
+export const getProductDetailsService = () => {
+  return instance
+    .get(`data/product.json`)
+    .then((res) => {
+      console.log({ res });
+      return res.data;
+    })
+    .catch((error) => error.response || error);
+};
