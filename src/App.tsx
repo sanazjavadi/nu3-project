@@ -1,14 +1,26 @@
-import React from 'react';
-import AppHeader from './components/AppHeader';
-import Showcase from './components/Showcase';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+//components
+import AppHeader from "./components/AppHeader";
+import Showcase from "./components/Showcase";
+
+//pages
+
+import Home from "./pages/Home";
 
 function App() {
-  return <>
-    <AppHeader title="Component Demo" />
-    <Showcase>
-        {/* Your components goes here... */}
-    </Showcase>
-  </>;
+  return (
+    <Router>
+      <AppHeader title="nu3" />
+      <Switch>
+        <Route path="/" exact>
+          <Showcase>
+            <Home />
+          </Showcase>
+        </Route>
+      </Switch>
+    </Router>
+  );
 }
 
 export default App;
