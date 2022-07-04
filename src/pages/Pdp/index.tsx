@@ -10,6 +10,7 @@ import { formatPrice } from "src/utils/formatPrice";
 import Select from "../../components/Select";
 import Loading from "../../components/Loading";
 import Button from "../../components/Button";
+import QrCodeLink from "../../components/QrCode";
 
 //interfaces
 import { image, variant } from "src/reducers/interfaces";
@@ -77,6 +78,7 @@ const Pdp: React.FC = (): JSX.Element => {
                   {product.vendor}
                 </h1>
               </div>
+              <QrCodeLink link={product.url} />
             </div>
 
             <p className="leading-relaxed">{product.body_html}</p>
