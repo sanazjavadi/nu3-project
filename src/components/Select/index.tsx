@@ -5,11 +5,12 @@ import { ISelect } from "./Select";
 
 const Select: React.FC<ISelect.IProps> = ({ onChange, options, label }) => {
   return (
-    <div className="flex ml-6 items-center">
-      <span className="mr-3">{label}</span>
+    <div className="flex items-center">
+      <span className="mr-1">{label}</span>
       <div className="relative">
         <select
-          className="rounded border appearance-none border-gray-400 py-2 focus:outline-none focus:border-red-500 text-base pl-3 pr-10"
+          className="appearance-none text-base text-gray-900 bg-gray-100 rounded-lg mr-3
+          border border-gray-300 py-2 focus:outline-none focus:border-red-500 text-base pl-3 pr-10"
           onChange={(e: React.ChangeEvent<HTMLSelectElement>) => onChange(e)}
         >
           {options.map((option) => (
