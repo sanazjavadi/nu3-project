@@ -1,3 +1,4 @@
 import { combineReducers } from "@reduxjs/toolkit";
+import search from "./search";
 
-export default combineReducers({});
+export default combineReducers({ search });
