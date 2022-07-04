@@ -6,13 +6,18 @@ import { getProducts, productStates } from "../../reducers/search";
 import Input from "src/components/Input";
 import Loading from "src/components/Loading";
 import ProductCard from "src/components/ProductCard";
+import Select from "src/components/Select";
 
 //utils
 import { useAppDispatch, useAppSelector } from "../../hooks/redux-hooks";
+import filterValues from "../../utils/filterValue";
 import { debounce } from "../../utils/debounce";
 
 //interfaces
 import { product } from "../../reducers/interfaces";
+
+//constant
+import { options } from "../../constant";
 
 const Home: React.FC = (): JSX.Element => {
   const dispatch = useAppDispatch();
@@ -30,10 +35,26 @@ const Home: React.FC = (): JSX.Element => {
     if (query.length > 1) dispatch(getProducts(query));
   }, [query]);
 
+  const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const val = e.target.value;
+    const splittedKey = val.split("_");
+    const sortKey = splittedKey.shift();
+    const sortOrder = splittedKey.pop();
+    const sortedResults = [...data].sort(filterValues(sortKey, sortOrder));
+
+    setData(sortedResults);
+  };
+
   useEffect(() => setData(products), [products]);
   return (
     <>
       <div className="flex border border-grey-600 px-7 py-7 my-3 rounded-lg">
+        <Select
+          data={products}
+          onChange={handleSelectChange}
+          // @ts-ignore
+          options={options}
+        />
         <Input
           error=""
           type="text"
