@@ -27,13 +27,14 @@ const Home: React.FC = (): JSX.Element => {
   const [data, setData] = useState<Array<product> | []>([]);
   const [query, setQuery] = useState("");
 
+  const haveQuery = !query.length;
   const handleChange = (val: string) => setQuery(val);
 
   useEffect(() => setData(products), [products]);
 
   useEffect(() => {
     if (query.length > 1) dispatch(getProducts(query));
-    if (!query.length) dispatch(clearSearch());
+    if (haveQuery) dispatch(clearSearch());
   }, [query]);
 
   const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -53,6 +54,7 @@ const Home: React.FC = (): JSX.Element => {
         <Select
           data={products}
           onChange={handleSelectChange}
+          disabled={haveQuery}
           // @ts-ignore
           options={options}
         />
