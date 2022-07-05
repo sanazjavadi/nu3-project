@@ -1,5 +1,7 @@
 This project is built with React, Redux Toolkit.
 
+Link: https://nu3-project.vercel.app/
+
 ![Alt text](screenshots/nu3.gif)
 
 ## Core Dependencies
