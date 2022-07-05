@@ -1,4 +1,5 @@
 This project is built with React, Redux Toolkit.
+![Alt text](screenshots/nu3.gif)
 
 ## Core Dependencies
 
@@ -14,5 +15,3 @@ This project is built with React, Redux Toolkit.
 - Product detail page
 - Qr code
 - Add to basket
-
-![Alt text](screenshots/nu3.gif)
