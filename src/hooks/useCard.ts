@@ -14,7 +14,6 @@ const useCard = () => {
   };
 
   const addItem = (item: cardItem) => {
-    console.log({ item });
     if (items.some((i) => i.id === item.id)) {
       const newItems = items.map((i) => {
         if (i.id === item.id) {

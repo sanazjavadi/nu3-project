@@ -14,7 +14,10 @@ const Select: React.FC<ISelect.IProps> = ({ onChange, options, label }) => {
           onChange={(e: React.ChangeEvent<HTMLSelectElement>) => onChange(e)}
         >
           {options.map((option) => (
-            <option value={option.id || option.value}>
+            <option
+              key={option.id || option.value || option}
+              value={option.id || option.value}
+            >
               {option.title || option}
             </option>
           ))}

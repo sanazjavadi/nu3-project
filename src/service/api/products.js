@@ -18,7 +18,6 @@ export const getProductDetailsService = () => {
   return instance
     .get(`data/product.json`)
     .then((res) => {
-      console.log({ res });
       return res.data;
     })
     .catch((error) => error.response || error);
