@@ -1,4 +1,5 @@
 This project is built with React, Redux Toolkit.
+
 ![Alt text](screenshots/nu3.gif)
 
 ## Core Dependencies
