@@ -8,6 +8,7 @@ import Showcase from "./components/Showcase";
 import Pdp from "./pages/Pdp";
 import Checkout from "./pages/Checkout";
 import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -20,10 +21,14 @@ function App() {
         <Route path="/checkout">
           <Checkout />
         </Route>
+
         <Route path="/" exact>
           <Showcase>
             <Home />
           </Showcase>
+        </Route>
+        <Route>
+          <NotFound />
         </Route>
       </Switch>
     </Router>
