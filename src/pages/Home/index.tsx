@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { getProducts, productStates } from "../../reducers/search";
+import { getProducts, productStates, clearSearch } from "../../reducers/search";
 
 //components
 import Input from "src/components/Input";
@@ -33,6 +33,7 @@ const Home: React.FC = (): JSX.Element => {
 
   useEffect(() => {
     if (query.length > 1) dispatch(getProducts(query));
+    if (!query.length) dispatch(clearSearch());
   }, [query]);
 
   const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -58,6 +59,7 @@ const Home: React.FC = (): JSX.Element => {
         <Input
           error=""
           type="text"
+          removeSearch={() => setQuery("")}
           placeholder="Search"
           value={query}
           onChange={(e) => debouncedSearch(e.target.value)}

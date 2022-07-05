@@ -16,7 +16,11 @@ const initialState: Products = {
 const searchSlice = createSlice({
   name: "search",
   initialState,
-  reducers: {},
+  reducers: {
+    clearSearch: (state) => {
+      return { ...state, products: [] };
+    },
+  },
   extraReducers: {
     [getProducts.pending as any]: (state: Products) => {
       return { ...state, loading: true };
@@ -27,5 +31,6 @@ const searchSlice = createSlice({
   },
 });
 
+export const { clearSearch } = searchSlice.actions;
 export const productStates = (state: RootState) => state.search;
 export default searchSlice.reducer;

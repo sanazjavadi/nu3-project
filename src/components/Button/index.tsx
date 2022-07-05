@@ -1,4 +1,3 @@
-import React from "react";
 import "./index.css";
 import useCard from "../../hooks/useCard";
 import { FaMinus, FaPlus, FaTrash } from "react-icons/fa";

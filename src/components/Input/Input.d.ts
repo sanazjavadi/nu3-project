@@ -6,6 +6,7 @@ declare namespace IInput {
     className: string;
     value: any;
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    removeSearch: () => void;
   }
 }
 
