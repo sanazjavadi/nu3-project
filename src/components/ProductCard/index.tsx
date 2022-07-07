@@ -16,7 +16,10 @@ const ProductCard: React.FC<IProductCard.IProps> = ({
 }) => {
   const { addItem } = useCard();
   return (
-    <div className="p-4 max-w-sm bg-white rounded-lg border border-gray-200 shadow-sm sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700 m-2">
+    <div
+      data-testid="product-cart-container"
+      className="p-4 max-w-sm bg-white rounded-lg border border-gray-200 shadow-sm sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700 m-2"
+    >
       <img className="p-8 rounded-t-lg" src={image} alt="product image" />
 
       <div className="px-5 pb-5">

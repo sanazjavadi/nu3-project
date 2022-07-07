@@ -2,10 +2,53 @@
 
 exports[`AppHeader: Snapshot 1`] = `
 <header
-  className="App-Header"
+  className="flex flex-wrap justify-between items-center mx-auto App-Header px-6"
+  data-testid="app-header"
 >
-  <h1>
-    Demo Header
-  </h1>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <h1
+      className="text-3xl text-grey-200 cursor-pointer"
+      data-testid="header-title"
+    />
+  </a>
+  <a
+    href="/checkout"
+    onClick={[Function]}
+  >
+    <div
+      className="basket-container flex items-center"
+      data-testid="basket-container"
+    >
+      <span
+        className="basket-count-badge"
+      >
+        0
+      </span>
+      <svg
+        fill="none"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+        />
+      </svg>
+    </div>
+  </a>
 </header>
 `;

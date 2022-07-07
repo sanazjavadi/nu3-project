@@ -1,16 +1,32 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import renderer from 'react-test-renderer';
-import AppHeader from './';
+import { render, screen } from "@testing-library/react";
+import AppHeader from "./";
+import TestWrapper, { makeStore } from "../../utils/TestWrapper";
+import renderer from "react-test-renderer";
 
-test('AppHeader: Renders', () => {
-  render(<AppHeader title="Demo Header" />);
-  const linkElement = screen.getByText(/demo header/i);
-  expect(linkElement).toBeInTheDocument();
+const store = makeStore();
+
+test("AppHeader: Renders", () => {
+  render(TestWrapper(AppHeader, store, { title: "Test" }));
+  const headerElement = screen.getByTestId("app-header");
+  expect(headerElement).toBeInTheDocument();
 });
 
-test('AppHeader: Snapshot', () => {
-  const component = renderer.create(<AppHeader title="Demo Header" />);
+test("AppHeader: Renders Title", () => {
+  render(TestWrapper(AppHeader, store, { title: "Test" }));
+  const headerTitleElement = screen.getByTestId("header-title");
+  expect(headerTitleElement).toHaveTextContent("Test");
+});
+
+test("AppHeader: Renders Basket", () => {
+  render(TestWrapper(AppHeader, store, { productsCount: 1 }));
+  const basketElement = screen.getByTestId("basket-container");
+  expect(basketElement).toBeInTheDocument();
+});
+
+test("AppHeader: Snapshot", () => {
+  const component = renderer.create(
+    TestWrapper(AppHeader, store, { productsCount: 1 })
+  );
   const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });

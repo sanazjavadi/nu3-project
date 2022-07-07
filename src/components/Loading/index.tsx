@@ -2,6 +2,7 @@ import { FunctionComponent } from "react";
 
 export const Loading: FunctionComponent = (): JSX.Element => (
   <svg
+    data-testid="loading"
     role="status"
     className="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600 mt-8"
     viewBox="0 0 100 101"

@@ -1,15 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AppHeader: Snapshot 1`] = `
+exports[`AppBasket: Snapshot 1`] = `
 <div
   className="basket-container flex items-center"
   data-testid="basket-container"
 >
   <span
     className="basket-count-badge"
-    data-testid="basket-count"
   >
-    1
+    0
   </span>
   <svg
     fill="none"

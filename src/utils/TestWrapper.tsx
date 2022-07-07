@@ -1,6 +1,6 @@
 import { configureStore, Store } from "@reduxjs/toolkit";
 import { MemoryRouter } from "react-router-dom";
-import React, { ComponentType } from "react";
+import { ComponentType, FunctionComponent } from "react";
 import { Provider } from "react-redux";
 import reducer from "../reducers";
 
@@ -9,7 +9,7 @@ export const makeStore = (): Store => {
 };
 
 const wrapComponent = (
-  Component: ComponentType,
+  Component: ComponentType | FunctionComponent | any,
   store: Store | null = null,
   props = {}
 ): JSX.Element => {

@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCart: Snapshot 1`] = `
+<div
+  className="p-4 max-w-sm bg-white rounded-lg border border-gray-200 shadow-sm sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700 m-2"
+  data-testid="product-cart-container"
+>
+  <img
+    alt="product image"
+    className="p-8 rounded-t-lg"
+  />
+  <div
+    className="px-5 pb-5"
+  >
+    <a
+      href="/product-detail-page"
+      onClick={[Function]}
+    >
+      <h5
+        className="text-lg font-semibold tracking-tight text-gray-900 dark:text-white h-16"
+      >
+        text
+      </h5>
+    </a>
+    <div
+      className="flex justify-between items-center"
+    >
+      <span
+        className="text-3xl font-bold text-gray-900 dark:text-white"
+      >
+        €NaN
+      </span>
+      <button
+        className="inline-block px-6 py-2.5 bg-gray-800 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
+        data-testid="initial-button"
+        onClick={[Function]}
+      >
+        Add to cart
+      </button>
+    </div>
+  </div>
+</div>
+`;

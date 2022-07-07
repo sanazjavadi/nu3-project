@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppSelect: Snapshot 1`] = `
+<div
+  className="flex items-center"
+>
+  <span
+    className="mr-1"
+  />
+  <div
+    className="relative"
+  >
+    <select
+      aria-label="select"
+      className="appearance-none text-base text-gray-900 bg-gray-100 rounded-lg mr-3 border border-gray-300 py-2 focus:outline-none focus:border-red-500 text-base pl-3 pr-10"
+      disabled={false}
+      onChange={[Function]}
+    >
+      <option
+        value="shuffle"
+      >
+        Shuffle
+      </option>
+    </select>
+  </div>
+</div>
+`;
