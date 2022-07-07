@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartColumns: Snapshot 1`] = `
+<thead
+  className="text-xs text-gray-700 uppercase border border-b-300 bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+  data-testid="cart-columns-container"
+>
+  <tr>
+    <th
+      className="px-6 py-3"
+      data-testid="image-column-header"
+      scope="col"
+    >
+      image
+    </th>
+    <th
+      className="px-6 py-3"
+      data-testid="item-column-header"
+      scope="col"
+    >
+      item
+    </th>
+    <th
+      className="px-6 py-3"
+      data-testid="price-column-header"
+      scope="col"
+    >
+      price
+    </th>
+    <th
+      className="px-6 py-3"
+      data-testid="quantity-column-header"
+      scope="col"
+    >
+      quantity
+    </th>
+    <th
+      className="px-6 py-3"
+      data-testid="subtotal-column-header"
+      scope="col"
+    >
+      subtotal
+    </th>
+  </tr>
+</thead>
+`;

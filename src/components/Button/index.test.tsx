@@ -1,8 +1,6 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import renderer from "react-test-renderer";
-// import useCard from "src/hooks/useCard";
 import TestWrapper, { makeStore } from "../../utils/TestWrapper";
-// import { renderHook } from "@testing-library/react-hooks";
 import Button from "./";
 
 const store = makeStore();

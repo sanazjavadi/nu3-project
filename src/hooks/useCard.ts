@@ -7,7 +7,7 @@ import { cardItem } from "../reducers/interfaces";
 const useCard = () => {
   const dispatch = useAppDispatch();
   const state = useAppSelector(basketItemsStates);
-  const items = state.basketItems;
+  const items = state?.basketItems;
 
   const updateItems = (data: cardItem[]) => {
     dispatch(addProduct(data));
@@ -60,13 +60,13 @@ const useCard = () => {
     // return storage.removeItem('cart');
   };
 
-  const getItemQty = (id: string) => items.find((i) => i.id === id)?.qty || 0;
+  const getItemQty = (id: string) => items?.find((i) => i.id === id)?.qty || 0;
 
-  const lineItemsCount = items.length;
+  const lineItemsCount = items?.length;
 
-  const totalItemsCount = items.reduce((a, c) => a + c.qty, 0);
+  const totalItemsCount = items?.reduce((a, c) => a + c.qty, 0);
 
-  const totalItemsAmount = items.reduce(
+  const totalItemsAmount = items?.reduce(
     (a, c) => a + Number(c.price) * c.qty,
     0
   );

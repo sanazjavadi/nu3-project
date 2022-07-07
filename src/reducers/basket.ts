@@ -8,7 +8,7 @@ const initialState: Items = {
   basketItems: [] as Array<cardItem>,
 };
 
-const basketSlice = createSlice({
+export const basketSlice = createSlice({
   name: "basket",
   initialState,
   reducers: {

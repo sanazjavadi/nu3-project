@@ -8,7 +8,7 @@ import CartTotals from "./CartTotals";
 const CartContent = () => {
   const { items } = useCard();
   return (
-    <div
+    <section
       className="relative overflow-x-auto shadow-md sm:rounded-lg mx-auto"
       style={{ maxWidth: "1200px" }}
     >
@@ -21,7 +21,7 @@ const CartContent = () => {
         </tbody>
       </table>
       <CartTotals />
-    </div>
+    </section>
   );
 };
 
